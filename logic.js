@@ -7,7 +7,12 @@
 // 
 // 
 // 
-var button = document.querySelector("#button")
+
+var quiz = document.getElementById("quiz")
+var start = document.getElementById("start") 
+var
+var
+
 
 
 
@@ -20,3 +25,7 @@ function setTime() {
         clearInterval(timerInterval);
         sendMessage();
       }
+  
+    }, 1000);
+  }
+  
