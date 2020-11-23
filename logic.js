@@ -8,24 +8,14 @@
 // 
 // 
 
-var quiz = document.getElementById("quiz")
-var start = document.getElementById("start") 
-var
-var
+const quiz = document.getElementById("quiz");
+const results = document.getElementById("results"); 
+const submit = document.getElementById("submit");
 
-
-
-
-function setTime() {
-    var timerInterval = setInterval(function() {
-      secondsLeft--;
-      timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+function generateQuiz(quiz, results, submit) {
   
-      if(secondsLeft === 0) {
-        clearInterval(timerInterval);
-        sendMessage();
-      }
+}
+
+function showResults(params) {
   
-    }, 1000);
-  }
-  
+}
