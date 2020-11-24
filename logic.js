@@ -8,14 +8,20 @@
 // 
 // 
 
-const quiz = document.getElementById("quiz");
-const results = document.getElementById("results"); 
-const submit = document.getElementById("submit");
+const starScreen = document.getElementById("start-screen");
+const resultsDiv = document.getElementById("results"); 
+const startBttn = document.getElementById("start");
+const nextBttn = document.getElementById("next-button");
+const quest1 = document.getElementById("question1");
 
-function generateQuiz(quiz, results, submit) {
-  
+startBttn.addEventListener("click", makeStartInvisible);
+
+function makeStartInvisible() {
+    console.log("Hi there!")
+    starScreen.classList.add("invisible");
+    quest1.classList.add("visible");
+    //make the quiz div invisible
 }
 
-function showResults(params) {
-  
-}
+//nextBttn.addEventListener("click", )
+

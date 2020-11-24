@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,39 @@
     <link rel="html" href="highscores.html">
     <title>Document</title>
 </head>
-<body>
 
+<body>
     <div id="quiz">
-        <h1>
-            Halo Quiz
-        </h1>
+        <div id="start-screen">
+            <h1>
+                Halo Quiz
+            </h1>
+            <div>
+                <p>
+                    Here is your Spartan Program Evaluation form, you have 117 seconds to complete.
+                </p>
+            </div>
+            <button id="start">Start Quiz</button>
+        </div>
+
+        <div id="question1" class="invisible">
+            <p>
+                What is the Master Chief's real name?
+            </p>
+            <input type="radio" id="answer1" name="question1" value="Jack">
+            <label for="Jack">Jack</label><br>
+            <input type="radio" id="answer1" name="question1" value="John">
+            <label for="John">John</label><br>
+            <input type="radio" id="answer1" name="question1" value="Edwin">
+            <label for="Edwin">Edwin</label>
+        </div>
     </div>
 
-    <div>
-        <p>
-            Here is your Spartan Program Evaluation form, you have 117 seconds to complete. 
-        </p>
-    </div id="submit">
-    <button>Submit Quiz</button>
-
+    <button id="next-button">Next</button>
+    
     <div id="results">
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="logic.js"></script>
 </body>
+
 </html>
