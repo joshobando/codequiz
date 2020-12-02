@@ -34,6 +34,13 @@ function displayNext() {
     currentQuestion = questionDivs[currentIndex++]
     questionDivs[currentIndex].classList.add("visible");
     questionDivs[currentIndex -1].classList.remove("visible");
-    currentIndex++
+    currentIndex+0;
 }
 
+
+
+if (question1 == "John"){
+    console.log("Correct");
+} //else{
+//     console.log("Wrong")
+// }
