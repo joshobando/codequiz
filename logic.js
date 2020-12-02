@@ -9,19 +9,31 @@
 // 
 
 const starScreen = document.getElementById("start-screen");
-const resultsDiv = document.getElementById("results"); 
+const resultsDiv = document.getElementById("results");
 const startBttn = document.getElementById("start");
 const nextBttn = document.getElementById("next-button");
 const quest1 = document.getElementById("question1");
-
+const quest2 = document.getElementById("question2")
+const quest3 = document.getElementById("question3");
+const quest4 = document.getElementById("question4");
+const quest5 = document.getElementById("question5")
+const questionDivs = document.querySelectorAll(".questions");
+let currentIndex = 0;
 startBttn.addEventListener("click", makeStartInvisible);
 
 function makeStartInvisible() {
-    console.log("Hi there!")
     starScreen.classList.add("invisible");
-    quest1.classList.add("visible");
+    questionDivs[currentIndex].classList.add("visible");
+    nextBttn.classList.add("visible");
     //make the quiz div invisible
 }
 
-//nextBttn.addEventListener("click", )
+nextBttn.addEventListener("click", displayNext);
+
+function displayNext() {
+    currentQuestion = questionDivs[currentIndex++]
+    questionDivs[currentIndex].classList.add("visible");
+    questionDivs[currentIndex -1].classList.remove("visible");
+    currentIndex++
+}
 
