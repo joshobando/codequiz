@@ -57,7 +57,7 @@ const questionArray = [{
         answer: "John"
     },
     {
-        question: "What is the name of the AI that assists the Master Chief's on his mis",
+        question: "What is the name of the AI that assists the Master Chief's on his missions",
         choices: ["Cortana", "Corvega", "Cecilia"],
         answer: "Cortana"
     },
@@ -147,3 +147,5 @@ document.querySelector("#questions").addEventListener("click", function (event) 
     }
 });
 document.querySelector("#start").addEventListener("click", startQuiz);
+
+localStorage.setItem("score","");
