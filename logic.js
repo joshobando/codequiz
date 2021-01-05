@@ -141,6 +141,11 @@ const endsQuiz = () => {
     document.querySelector("#final-score").textContent = score;
 }
 
+const submitScore = () => {
+    //add functionality to submit
+    document.querySelector("#submit").addEventListener("click",function)
+}
+
 document.querySelector("#questions").addEventListener("click", function (event) {
     if (event.target.className.indexOf("choice") > -1) {
         handleAnswerChoice(event);
